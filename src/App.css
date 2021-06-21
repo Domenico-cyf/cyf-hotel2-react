@@ -4,10 +4,13 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 30px;
+  margin-left: 2rem;
+  margin-top: -10px;
 }
 
 .App-header {
+  display: flex;
   background-color: #222;
   height: 50px;
   padding: 20px;
@@ -52,6 +55,26 @@ tr {
   text-align: center;
 }
 
+.footer-list {
+  list-style: none;
+}
+/* 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 18rem;
 }
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: space-around;
+  
+}
+
+.card img {
+  width: 100%;
+} */
