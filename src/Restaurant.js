@@ -1,17 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import RestaurantButton from "./RestaurantButton";
 import Order from "./Order";
+import orderType from "../src/data/OrderType";
 
 const Restaurant = () => {
-  const [orders, setOrders] = useState(0);
-  const orderOne = () => {
-    setOrders(orders + 1);
-  };
   return (
     <div>
       <h3>Restaurant Orders</h3>
       <ul>
-        <Order orders={orders} orderOne={orderOne} />
+        {orderType.map((type, index) => (
+          <Order key={index} type={type} />
+        ))}
       </ul>
     </div>
   );
